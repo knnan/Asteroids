@@ -24,7 +24,7 @@ function draw() {
 
   for (var i = 0; i < asteroids.length; i++) {
     if (ship.hits(asteroids[i])) {
-      var strr = 'Gameover';
+      var strr = 'Gameover!!!';
       textSize(60);
       fill(255,0,0);
       text(strr, windowWidth/2, windowHeight/2);
