@@ -4,7 +4,7 @@
 // Code for: https://youtu.be/hacZU523FyM
 function preload()
 {
-  jet = loadImage("jet.png");
+  jet = loadImage("jets/jet2.png");
 }
 function Ship() {
   this.pos = createVector(width / 2, height / 2);
