@@ -2,10 +2,13 @@
 // http://codingtra.in
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/hacZU523FyM
-
+function preload()
+{
+  jet = loadImage("jet.png");
+}
 function Ship() {
   this.pos = createVector(width / 2, height / 2);
-  this.r = 20;
+  this.r = 30;
   this.heading = 0;
   this.rotation = 0;
   this.vel = createVector(0, 0);
@@ -45,7 +48,8 @@ function Ship() {
     // fill(108,194,74);
     fill(0,255,0);
     stroke(255);
-    triangle(-this.r, this.r, this.r, this.r, 0, -this.r);
+    image(jet,-this.r,-this.r,75,75);
+    // triangle(-this.r, this.r, this.r, this.r, 0, -this.r);
     pop();
   }
 
